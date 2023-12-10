@@ -21,18 +21,46 @@
 
     <!-- Set the Favicon  -->
     <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
   </head>
   <body>
-    <!--
+    <div class="container">
+      <h1>Tic Tac Toe</h1>
+      <div id="board" class="board">
+        <div class="cell" data-cell="0"></div>
+        <div class="cell" data-cell="1"></div>
+        <div class="cell" data-cell="2"></div>
+        <div class="cell" data-cell="3"></div>
+        <div class="cell" data-cell="4"></div>
+        <div class="cell" data-cell="5"></div>
+        <div class="cell" data-cell="6"></div>
+        <div class="cell" data-cell="7"></div>
+        <div class="cell" data-cell="8"></div>
+      </div>
 
-      ADD YOUR GROUP PROJECT CODE
+      <p class="status">Player X's turn</p>
 
-      YOU MAY REMOVE THE BOILERPLATE CODE BELOW
+      <button id="restartButton">Restart Game</button>
+      
+      <div class="victory-screen">
+        <h2 class="victory-message"></h2>
+      </div>
+      
+      <div class="scoreboard">
+        <h2>Scoreboard</h2>
+        <p>Player X Score: <span id="playerXScore">0</span></p>
+        <p>Player O Score: <span id="playerOScore">0</span></p>
+      </div>
+    </div>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+    <div id="particles-js"></div>
 
-    -->
-    <main>
-      <div id="app"></div>
-    </main>
 
     <!-- This is where we add our awesome JavaScript code -->
     <script src="./script.js"></script>
